@@ -86,7 +86,7 @@ public class GuiMarket extends GuiContainer
                                 MarketData data = MarketItems.getData(itemNum);
                                 if( buySlot.getItem() == data.getCurrency().getItem())
                                 {
-                                        if (buySlot.getItemDamage() == data.getItem().getItemDamage())
+                                        if (buySlot.getItemDamage() == data.getCurrency().getItemDamage())
                                         {
                                                 int price = data.getPrice();
                                                 if (buySlot.stackSize == price)
